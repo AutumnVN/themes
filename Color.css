@@ -1,0 +1,27 @@
+.theme-dark {
+    --background-modifier-accent: hsl(var(--primary-600-hsl) / 0.48);
+    --background-primary: var(--primary-700);
+    --background-secondary: var(--primary-730);
+    --background-secondary-alt: var(--primary-760);
+    --background-tertiary: var(--primary-800);
+    --brand-360: var(--blue-360);
+    --brand-430: var(--blue-430);
+    --brand-500: var(--blue-430);
+    --brand-530: var(--blue-460);
+    --brand-560: var(--blue-500);
+    --brand-600: var(--blue-530);
+    --channeltextarea-background: var(--primary-660);
+    --input-background: var(--background-tertiary);
+    --mention-background: hsl(var(--blue-430-hsl) / 0.3);
+    --modal-background: var(--background-primary);
+    --scrollbar-auto-thumb: var(--primary-530);
+    --scrollbar-auto-track: transparent;
+    --scrollbar-thin-thumb: var(--primary-530);
+}
+
+/* channel & role */
+[class*=chat_]>[class*=header_],
+[class*=chat_]>[class*=header_]+[class*=content_],
+[class*=chat_]>[class*=header_]+[class*=content_]>[class*=chat_] {
+    background-color: var(--background-primary);
+}

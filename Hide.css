@@ -1,0 +1,106 @@
+[class*=header_]:has(+[class*=premiumTab_]),
+[class*=premiumTab_],
+[class*=premiumTab_]+[class*=item_],
+[aria-label="Subscriptions"],
+[aria-label="Gift Inventory"],
+[aria-label="Gift Inventory"]+[class*=item_],
+[aria-label="Gift Inventory"]+[class*=item_]+[class*=separator_],
+
+[href="/store"],
+[href="/shop"],
+
+[href="https://support.discord.com"],
+[aria-label="Help"],
+
+#profile-customization-tab>[class*=container_],
+[class*=bannerNitroUpsell_],
+[class*=customizationSection_]:has(>h3>[class*=premiumBadge_]),
+[class*=tryItOutSection_],
+[class*=upsellOverlayContainer_],
+
+[class*=profileEffects_],
+[class*=avatarDecoration_],
+[class*=premiumIconWrapper_],
+[class*=premiumIcon_],
+
+[class*=shinyButton_],
+[class*=effectsWrapper_],
+[class*=burstGlow_],
+
+[aria-label="Servers sidebar"]>ul>div>[aria-label="Servers"]~[class*=listItem_],
+
+[aria-label="Channels"]>[aria-label$="perks!"],
+
+[class*=threadSuggestionBar_],
+[class*=popout_]:has(>[class*=more_]),
+
+[class*=option_]:after,
+
+#channel-context-invite-people,
+[class*=separator_]:has(+div>#guild-context-invite-people),
+#guild-context-invite-people,
+
+#user-context-invite-to-server,
+#user-context-call,
+#user-context-note,
+#user-context-add-friend-nickname,
+#user-context-close-dm,
+
+#message-actions>div>[class*=wrapper_],
+#message-actions-add-reaction-0,
+#message-actions-edit,
+#message-actions-pin,
+#message-actions-thread,
+#message-actions-mark-unread,
+#message-actions-copy-link,
+#message-actions-tts,
+#message-actions-report,
+[class*=separator_]:has(+div>[id*=message-actions-devmode-copy-id]),
+[id*=message-actions-devmode-copy-id],
+
+#message>div>[class*=wrapper_],
+#message-add-reaction-0,
+#message-edit,
+#message-thread,
+#message-mark-unread,
+#message-tts,
+#message-report,
+[class*=separator_]:has(+div>[id*=message-devmode-copy-id]),
+[id*=message-devmode-copy-id],
+
+[aria-label="Create Invite"],
+[aria-label="Invite to Server"],
+
+[aria-label="Send a gift"],
+
+[aria-label="Mark Unread"],
+[aria-label="Copy Message ID"],
+[aria-label="Enable Super Reactions"] {
+    display: none !important;
+}
+
+/* avatar decoration hint */
+[class*=avatarDecorationHint_] {
+    top: 0;
+    left: 0;
+}
+
+[class*=avatarDecorationHint_]>foreignObject {
+    mask: url(#svg-mask-avatar-status-round-80);
+    width: 80px;
+    height: 80px;
+}
+
+/* channel scroller height fix */
+[aria-label="Channels"] {
+    height: unset !important;
+}
+
+/* super reaction */
+[class*=hideEmoji_] {
+    opacity: 1;
+}
+
+[class*=shakeReaction_] {
+    animation: none !important;
+}

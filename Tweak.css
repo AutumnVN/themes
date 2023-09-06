@@ -1,0 +1,296 @@
+:root {
+    --font-primary: Inter;
+    --font-display: Inter;
+    --font-code: Consolas;
+}
+
+/* bot option drop down */
+[class*=popout_][style*=max-height]:has(+[class*=measurement_]) {
+    max-height: 100vh !important;
+}
+
+/* channel indicator */
+:root {
+    --i-width: 2px;
+    --i-mention: var(--red-360-hsl);
+    --i-selected: var(--blue-330-hsl);
+    --i-connected: var(--green-260-hsl);
+}
+
+[class*=containerD] {
+    margin: 2px 0;
+}
+
+[class*=containerD] [class*=link_] {
+    background: transparent !important;
+}
+
+[class*=containerD]:has(>[class*=typeDefault_]):hover {
+    background-color: var(--background-modifier-hover);
+}
+
+[class*=containerD]:has(>[class*=modeSelected_]) {
+    background-color: hsla(var(--i-selected)/0.15);
+}
+
+[class*=containerD]:has(>[class*=modeSelected_]):before {
+    position: absolute;
+    background: hsl(var(--i-selected));
+    width: var(--i-width);
+    height: 100%;
+    content: '';
+}
+
+[class*=containerD]:has(>[class*=modeSelected_]):hover {
+    background-color: hsla(var(--i-selected)/0.25);
+}
+
+[class*=containerD]>[class*=modeSelected_]>div>[class*=link_] svg,
+[class*=containerD]>[class*=modeSelected_]>div>[class*=link_]>div>[class*=name_],
+[class*=containerD]>[class*=modeSelected_][class*=typeThread_]>[class*=link_]>div>[class*=name_] {
+    color: hsl(var(--i-selected));
+}
+
+[class*=containerD]>[class*=modeUnread_]>[class*=unreadRelevant_] {
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    border-radius: 0;
+    width: var(--i-width);
+    height: 15px;
+}
+
+[class*=containerD]>[class*=modeUnread_]>div>[class*=link_] svg,
+[class*=containerD]>[class*=modeUnread_]>div>[class*=link_]>div>[class*=name_] {
+    color: #fff;
+}
+
+[class*=containerD]:has([class*=mentionsBadge_]):hover {
+    background-color: hsla(var(--i-mention)/0.25);
+}
+
+[class*=containerD]:has([class*=mentionsBadge_])>div>[class*=unreadRelevant_] {
+    background-color: hsl(var(--i-mention));
+}
+
+[class*=containerD]:has([class*=mentionsBadge_])>div>div>[class*=link_] svg,
+[class*=containerD]:has([class*=mentionsBadge_])>div>div>[class*=link_]>div>[class*=name_],
+[class*=containerD]:has([class*=mentionsBadge_])>[class*=typeThread_]>[class*=link_]>div>[class*=name_] {
+    color: hsl(var(--i-mention));
+}
+
+[class*=containerD]:has(>div>[class*=modeConnected_]) {
+    background-color: hsla(var(--i-connected)/0.15);
+}
+
+[class*=containerD]:has(>div>[class*=modeConnected_]):before {
+    position: absolute;
+    background: hsl(var(--i-connected));
+    width: var(--i-width);
+    height: 100%;
+    content: '';
+}
+
+[class*=containerD]:has(>div>[class*=modeConnected_]):hover {
+    background-color: hsla(var(--i-connected)/0.25);
+}
+
+[class*=containerD]>div>[class*=modeConnected_]>div>[class*=link_] svg,
+[class*=containerD]>div>[class*=modeConnected_]>div>[class*=link_]>div>[class*=name_] {
+    color: hsl(var(--i-connected));
+}
+
+[class*=channel_] {
+    margin: 2px 0;
+    max-width: unset;
+}
+
+[class*=channel_]>div>[class*=link_] {
+    padding-left: 4px;
+}
+
+[class*=channel_]:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+[class*=channel_]:has(>[class*=selected_]) {
+    background-color: hsla(var(--i-selected)/0.15);
+}
+
+[class*=channel_]:has(>[class*=selected_]):before {
+    position: absolute;
+    background: hsl(var(--i-selected));
+    width: var(--i-width);
+    height: 100%;
+    content: '';
+}
+
+[class*=channel_]:has(>[class*=selected_]):hover {
+    background-color: hsla(var(--i-selected)/0.25);
+}
+
+[class*=channel_]>[class*=selected_]>[class*=link_]>div>div>[class*=linkButtonIcon_],
+[class*=channel_]>[class*=selected_]>[class*=link_]>div>div>div>[class*=name_],
+[class*=channel_]>[class*=selected_]>[class*=closeButton_] {
+    color: hsl(var(--i-selected));
+}
+
+[class*=channel_]>[class*=interactive_] {
+    background: transparent;
+}
+
+/* channel list */
+[class*=content_]>[class*=sidebar_],
+[class*=bannerImage_],
+[class*=bannerImg_] {
+    width: 260px;
+}
+
+[class*="withTagAsButton_"] {
+    flex: 1;
+}
+
+@media (width < 600px) {
+
+    [class*=content_]>[class*=sidebar_],
+    [aria-label="Channel header"]>div>[class*=toolbar_],
+    [aria-label="Servers sidebar"] {
+        display: none;
+    }
+}
+
+/* dashless */
+@font-face {
+    src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+    font-family: "Dashless";
+}
+
+[class*=name_],
+h1[class*=title_],
+[class*=channelNameText_],
+[class*=placeholder_] {
+    font-family: "Dashless", var(--font-primary);
+}
+
+/* download attachment */
+[class*=nonMediaAttachment_] {
+    top: 20px;
+    right: 20px;
+    opacity: 1;
+}
+
+/* embed */
+[class*=embedFull_],
+[class*=gridContainer_] {
+    max-width: fit-content !important;
+}
+
+/* friend list username */
+[class*=discriminator_] {
+    visibility: visible;
+}
+
+/* home icon */
+[data-list-item-id="guildsnav___home"]>[class*=childWrapper_] {
+    fill-opacity: 0;
+    background: url('https://chino.pages.dev/home.webp') center/cover no-repeat;
+}
+
+/* loading screen */
+[class*=fixClipping_] {
+    background: transparent;
+    pointer-events: none;
+}
+
+/* member list */
+[class*=membersWrap_]>[class*=members_] {
+    width: 260px;
+}
+
+[aria-label="Members"]>[class*=member_] {
+    max-width: unset;
+}
+
+@media (width < 1200px) {
+    [class*=container_]:has(>[class*=membersWrap_]) {
+        display: none;
+    }
+}
+
+/* message */
+@media (width < 600px) {
+    [class*=message_] {
+        padding-right: 0 !important;
+    }
+}
+
+/* open chat button */
+[aria-label="Open Chat"] {
+    display: flex;
+    order: 1;
+}
+
+/* search bar */
+[class*=toolbar_]>[class*=search_] {
+    order: -1;
+}
+
+/* stream */
+[class*=pictureInPictureVideo_] {
+    width: 640px;
+    height: 360px;
+}
+
+[class*=streamPreview_]:not([class*=content_]) {
+    width: 504px;
+}
+
+[class*=previewContainer_] {
+    height: 284px;
+}
+
+/* reaction *
+[id*="message-reactions"]>div>div>div>div>.emoji,
+[id*="message-reactions"]>div>div>div>[class*=reactionCount_],
+[class*=effectsWrapper_] {
+    zoom: 200%;
+}
+
+/* tag */
+[class*=botText_] {
+    font-weight: 500;
+    font-size: .625rem !important;
+}
+
+[class*=chipletContainerInner_]>[class*=text_] {
+    font-weight: 500;
+}
+
+/* windows title bar */
+[class*=typeWindows_] {
+    position: absolute;
+    width: 100%;
+    height: 9px;
+}
+
+[class*=winButton_] {
+    width: 48px;
+    height: 48px;
+}
+
+[aria-label="Channel header"]:not([class*=threadSidebarOpen_]>[aria-label="Channel header"]),
+section[class*=header_]:not([class*=threadSidebarOpen_]>section[class*=header_]),
+[aria-label="Create Thread"]>section>div>[class*=toolbar_],
+[aria-label="Thread header"],
+[aria-label^="Show Chat"],
+main>section[class*=container_] {
+    padding-right: calc(48px * 3);
+}
+
+[class*=wordmarkWindows_] {
+    display: none;
+}
+
+[class*=typeWindows_]:has(+[class*=appAsidePanelWrapper_]>div>div>div>div>div>div>div>[class*=notice_])>[class*=winButton_] {
+    margin-top: 40px;
+}
