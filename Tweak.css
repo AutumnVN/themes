@@ -256,6 +256,16 @@ h1[class*=title_],
     zoom: 200%;
 }
 
+/* tag */
+[class*=botText_] {
+    font-weight: 500;
+    font-size: .625rem !important;
+}
+
+[class*=clanTagChiplet_]>[class*=text_] {
+    font-weight: 500;
+}
+
 /* windows title bar */
 [class*=typeWindows_] {
     position: absolute;
