@@ -262,7 +262,7 @@ h1[class*=title_],
     font-size: .625rem !important;
 }
 
-[class*=clanTagChiplet_]>[class*=text_] {
+[class*=chipletContainerInner_]>[class*=text_] {
     font-weight: 500;
 }
 
