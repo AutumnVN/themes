@@ -24,7 +24,11 @@
 }
 
 [data-tag="vc mod"] {
-    background-color: var(--green-500);
+    background-color: var(--teal-345);
+}
+
+[data-tag="chat mod"] {
+    background-color: var(--teal-400);
 }
 
 [data-tag*=bot] {
