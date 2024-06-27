@@ -30,7 +30,8 @@
 
 /* footer & note */
 [class*=userPopoutInner_]>[class*=footer_],
-[class*=section_]:has(>[class*=note_]) {
+[class*=section_]:has(>[class*=note_]),
+[aria-label="Add Note"] {
     display: none;
 }
 
