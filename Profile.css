@@ -1,41 +1,40 @@
-[class*=userPopoutOuter_] {
-    --profile-body-background-color: transparent !important;
+.theme-dark {
+    --bg-mod-faint: transparent;
+    --border-faint: transparent;
+}
+
+/* account panel */
+[class*=accountProfilePopoutWrapper_] {
+    bottom: -8px;
+}
+
+[class*=menus_]:has(>#status, >#account) {
+    gap: 0;
+}
+
+:is(#status, #account)>[class*=scroller_] {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+:is(#status, #account)>[class*=scroller_]>[class*=separator_] {
+    display: none;
 }
 
 /* color banner */
-[class*=popoutBanner_],
-[class*=profileBanner_],
-[class*=popoutNoBannerPremium_] {
-    display: none;
-}
-
-[class*=panelBanner_],
-[class*=bannerNormal_] {
+[class*=biteSizeBanner_],
+[class*=fullSizeBanner_],
+[class*=panelBanner_] {
     background-color: transparent !important;
 }
 
+/* footer & note */
+[class*=userPopoutInner_]>[class*=footer_],
+[class*=section_]:has(>[class*=note_]) {
+    display: none;
+}
+
 /* long bio */
-[class*=lineClamp2Plus_] {
+[class*=descriptionClamp_] {
     display: block;
-}
-
-/* note & message */
-[class*=section_]:has(>[class*=note_]),
-[class*=section_]:has(>[class*=messageInputContainer_]) {
-    display: none;
-}
-
-/* old twitter */
-[src*="/assets/f47485602365c946fa52.svg"] {
-    content: url("https://discord.com//assets/57a3fe2c0e62e98937fd.svg");
-}
-
-/* shorter account panel */
-#account {
-    height: 76px;
-}
-
-#account>div>[class*=separator_],
-[class*=divider_]:has(+#account) {
-    display: none;
 }
