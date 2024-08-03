@@ -185,6 +185,16 @@ h1[class*=title_],
     max-width: fit-content !important;
 }
 
+[class*=embedFull_]:has([class*=embedMedia_]),
+[class*=gridContainer_]:has([class*=embedMedia_]) {
+    min-width: 532px !important;
+}
+
+[class*=embed_] [style*="max-width: 400px"] {
+    max-width: 500px !important;
+    max-height: none !important;
+}
+
 /* friend list username */
 [class*=discriminator_] {
     visibility: visible;
