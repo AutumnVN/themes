@@ -72,6 +72,7 @@
 [aria-label="Invite to Server"],
 
 [aria-label="Send a gift"],
+[class*=channelAppLauncher_],
 
 [aria-label="Mark Unread"],
 [aria-label="Copy Message ID"],
