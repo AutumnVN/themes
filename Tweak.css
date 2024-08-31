@@ -192,7 +192,11 @@ h1[class*=title_],
 
 [class*=embed_] [style*="max-width: 400px"] {
     max-width: 500px !important;
-    max-height: none !important;
+    max-height: 375px !important;
+}
+
+[class*=embedVideo_][style*="padding-bottom"] {
+    padding-bottom: 300px !important;
 }
 
 /* friend list username */
