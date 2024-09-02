@@ -250,11 +250,6 @@ h1[class*=title_],
 }
 
 /* stream */
-[class*=pictureInPictureVideo_] {
-    width: 640px;
-    height: 360px;
-}
-
 [class*=streamPreview_]:not([class*=content_]) {
     width: 504px;
 }
