@@ -210,6 +210,11 @@ h1[class*=title_],
     background: url('https://chino.pages.dev/home.webp') center/cover no-repeat;
 }
 
+/* jump to present bar */
+[class*=jumpToPresentBar_] {
+    right: 16px;
+}
+
 /* loading screen */
 [class*=fixClipping_] {
     background: transparent;
