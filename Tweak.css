@@ -146,7 +146,7 @@
     width: 260px;
 }
 
-[class*="withTagAsButton_"] {
+[class*=avatarWrapper_][aria-label="Set Status"] {
     flex: 1;
 }
 
