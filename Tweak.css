@@ -270,6 +270,11 @@ h1[class*=title_],
     zoom: 200%;
 }
 
+/* reaction button */
+[class*=reactionBtn_][class*=forceShow_] {
+    opacity: 0;
+}
+
 /* tag */
 [class*=botText_] {
     font-weight: 500;
