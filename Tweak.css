@@ -205,9 +205,8 @@ h1[class*=title_],
 }
 
 /* home icon */
-[data-list-item-id="guildsnav___home"]>[class*=childWrapper_] {
-    fill-opacity: 0;
-    background: url('https://chino.pages.dev/home.webp') center/cover no-repeat;
+[data-list-item-id="guildsnav___home"] {
+    content: url('https://cdn.discordapp.com/avatars/393694671383166998/48420475698234eede0171c304275779.webp');
 }
 
 /* jump to present bar */
