@@ -1,35 +1,33 @@
 [class*=header_]:has(+[class*=premiumTab_]),
 [class*=premiumTab_],
 [class*=premiumTab_]+[class*=item_],
-[aria-label="Subscriptions"],
-[aria-label="Gift Inventory"],
-[aria-label="Gift Inventory"]+[class*=item_],
-[aria-label="Gift Inventory"]+[class*=item_]+[class*=separator_],
+[aria-label=Subscriptions],
+[aria-label='Gift Inventory'],
+[aria-label='Gift Inventory']+[class*=item_],
+[aria-label='Gift Inventory']+[class*=item_]+[class*=separator_],
 
-[href="/store"],
-[href="/shop"],
+[href='/store'],
+[href='/shop'],
 
-[href="https://support.discord.com"],
-[aria-label="Help"],
+[href='https://support.discord.com'],
 
 #profile-customization-tab>[class*=container_],
-[class*=bannerNitroUpsell_],
 [class*=customizationSection_]:has(>h3>[class*=premiumBadge_]),
 [class*=tryItOutSection_],
 [class*=upsellOverlayContainer_],
 
 [class*=profileEffects_],
 [class*=avatarDecoration_],
-[class*=premiumIconWrapper_],
 [class*=premiumIcon_],
 
 [class*=shinyButton_],
 [class*=effectsWrapper_],
 [class*=burstGlow_],
 
-[aria-label="Servers sidebar"]>ul>div>[aria-label="Servers"]~[class*=listItem_],
+[data-list-id=guildsnav]>[class*=footer_],
+[aria-label=Servers]~[class*=listItem_],
 
-[aria-label="Channels"]>[aria-label$="perks!"],
+[data-list-item-id*=channels___boosts],
 
 [class*=threadSuggestionBar_],
 [class*=popout_]:has(>[class*=more_]),
@@ -68,33 +66,18 @@
 [class*=separator_]:has(+div>[id*=message-devmode-copy-id]),
 [id*=message-devmode-copy-id],
 
-[aria-label="Create Invite"],
-[aria-label="Invite to Server"],
+[aria-label='Create Invite'],
+[aria-label='Invite to Server'],
 
-[aria-label="Send a gift"],
+[aria-label='Send a gift'],
 [class*=channelAppLauncher_],
 
-[aria-label="Mark Unread"],
-[aria-label="Copy Message ID"],
-[aria-label="Enable Super Reactions"] {
+[aria-label*='Click to'],
+[aria-label*='Click to']+[class*=separator_],
+[aria-label='Mark Unread'],
+[aria-label='Copy Message ID'],
+[aria-label='Enable Super Reactions'] {
     display: none !important;
-}
-
-/* avatar decoration hint */
-[class*=avatarDecorationHint_] {
-    top: 0;
-    left: 0;
-}
-
-[class*=avatarDecorationHint_]>foreignObject {
-    mask: url(#svg-mask-avatar-status-round-80);
-    width: 80px;
-    height: 80px;
-}
-
-/* channel scroller height fix */
-[aria-label="Channels"] {
-    height: unset !important;
 }
 
 /* super reaction */

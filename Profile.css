@@ -8,30 +8,15 @@
     bottom: -8px;
 }
 
-[class*=menus_]:has(#status, #account) {
-    gap: 0;
-}
-
-:is(#status, #account)>[class*=scroller_] {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-:is(#status, #account)>[class*=scroller_]>[class*=separator_] {
-    display: none;
-}
-
 /* color banner */
-[class*=biteSizeBanner_],
-[class*=fullSizeBanner_],
-[class*=panelBanner_] {
+[class*=banner_][style*=background-color] {
     background-color: transparent !important;
 }
 
 /* footer & note */
-[class*=userPopoutInner_]>[class*=footer_],
+[class*=userProfileInner_]>[class*=footer_],
 [class*=section_]:has(>[class*=note_]),
-[aria-label="Add Note"] {
+[aria-label='Add Note'] {
     display: none;
 }
 
@@ -41,6 +26,6 @@
     max-height: unset;
 }
 
-[class*="viewFullBio_"] {
+[class*=viewFullBio_] {
     display: none;
 }
