@@ -141,7 +141,7 @@
 
 /* channel list */
 [class*=content_]>[class*=sidebar_],
-[class*=bannerImage_],
+[class*=bannerImage_]:not(:has([class*=bannerGradient_])),
 [class*=bannerImg_] {
     width: 260px;
 }
@@ -305,7 +305,8 @@ section[class*=header_]:not([class*=threadSidebarOpen_]>section[class*=header_])
 [aria-label='Create Thread']>section>div>[class*=toolbar_],
 [aria-label='Thread header'],
 [aria-label='Show Chat'],
-main>section[class*=container_] {
+main>section[class*=container_],
+[class*=container_]>[class*=headerBar_]:has([class*=searchBar_]) {
     padding-right: calc(48px * 3);
 }
 
