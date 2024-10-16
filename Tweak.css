@@ -204,13 +204,9 @@ h1[class*=title_],
     visibility: visible;
 }
 
-/* home icon */
+/* home icon *
 [data-list-item-id=guildsnav___home] {
-    content: url('https://cdn.discordapp.com/avatars/393694671383166998/48420475698234eede0171c304275779.webp');
-}
-
-[data-list-item-id=guildsnav___home]:hover {
-    content: url('https://cdn.discordapp.com/icons/784975716038606848/7b2195dedf0c2ef996be3b235d0dd6c0.webp');
+    content: url('');
 }
 
 /* jump to present bar */
