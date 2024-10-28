@@ -274,6 +274,11 @@ h1[class*=title_],
     opacity: 0;
 }
 
+/* rpc header */
+[class*=card_]>header>[class*=headerText_]>[class*=overflow_] {
+    white-space: wrap;
+}
+
 /* tag */
 [class*=botText_] {
     font-weight: 500;
