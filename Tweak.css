@@ -274,9 +274,13 @@ h1[class*=title_],
     opacity: 0;
 }
 
-/* rpc header */
+/* rpc */
 [class*=card_]>header>[class*=headerText_]>[class*=overflow_] {
     white-space: wrap;
+}
+
+[class*=card_]>[class*=body_]>[class*=content_]>[class*=details_]>div>[class*="heading-sm/semibold_"] {
+    font-size: 12px;
 }
 
 /* tag */
