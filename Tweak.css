@@ -309,7 +309,7 @@ h1[class*=title_],
 section[class*=header_]:not([class*=threadSidebarOpen_]>section[class*=header_]),
 [aria-label='Create Thread']>section>div>[class*=toolbar_],
 [aria-label='Thread header'],
-[aria-label='Show Chat'],
+[aria-label*='Show Chat'],
 main>section[class*=container_],
 [class*=container_]>[class*=headerBar_]:has([class*=searchBar_]) {
     padding-right: calc(48px * 3);
