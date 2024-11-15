@@ -76,7 +76,9 @@
 [aria-label*='Click to']+[class*=separator_],
 [aria-label='Mark Unread'],
 [aria-label='Copy Message ID'],
-[aria-label='Enable Super Reactions'] {
+[aria-label='Enable Super Reactions'],
+
+[data-author-username=AxerBot]:has([class*=messageContent_]>ul) {
     display: none !important;
 }
 
