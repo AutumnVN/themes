@@ -24,7 +24,7 @@
 [class*=effectsWrapper_],
 [class*=burstGlow_],
 
-[data-list-id=guildsnav]>[class*=footer_],
+[data-list-id=guildsnav]>div>[class*=footer_],
 [aria-label=Servers]~[class*=listItem_],
 
 [data-list-item-id*=channels___boosts],
