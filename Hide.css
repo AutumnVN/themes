@@ -72,8 +72,10 @@
 [aria-label='Send a gift'],
 [class*=channelAppLauncher_],
 
-[aria-label*='Click to'],
-[aria-label*='Click to']+[class*=separator_],
+[aria-label*='Click to react'],
+[aria-label*='Click to react']+[class*=separator_],
+[aria-label*='Click to remove'],
+[aria-label*='Click to remove']+[class*=separator_],
 [aria-label='Mark Unread'],
 [aria-label='Copy Message ID'],
 [aria-label='Enable Super Reactions'],
