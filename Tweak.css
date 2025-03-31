@@ -242,6 +242,22 @@ h1[class*=title_],
     }
 }
 
+/* offscreen fix */
+[class*=topic_],
+[class*=nicknames_],
+[class*=subtitleContainer_] [class*=children_] {
+    width: 0;
+}
+
+[class*=list_][class*=auto_] {
+    position: absolute;
+    height: 100%;
+}
+
+[class*=tileWrapper_]:has(>[class*=videoFrame_]) {
+    position: absolute;
+}
+
 /* open chat button */
 [aria-label='Open Chat'] {
     display: flex;
@@ -305,7 +321,10 @@ h1[class*=title_],
     height: 48px;
 }
 
-[aria-label='Channel header']:not([class*=threadSidebarOpen_]>div>[aria-label='Channel header']),
+[aria-label='Channel header']:not([class*=threadSidebarOpen_]>div>[aria-label='Channel header']) {
+    padding-right: calc(48px * 3);
+}
+
 section[class*=header_]:not([class*=threadSidebarOpen_]>section[class*=header_]),
 [aria-label='Create Thread']>section>div>[class*=toolbar_],
 [aria-label='Thread header'],
