@@ -1,23 +1,11 @@
-.theme-dark {
-    --bg-mod-faint: transparent;
-    --border-faint: transparent;
-}
-
-/* account panel */
-[class*=accountProfilePopoutWrapper_] {
-    bottom: -8px;
+.theme-midnight {
+    --background-secondary-alt: color-mix(in oklab, var(--neutral-95) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+    --bg-surface-overlay: color-mix(in oklab, var(--primary-800) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 }
 
 /* color banner */
 [class*=banner_][style*=background-color] {
     background-color: transparent !important;
-}
-
-/* footer & note */
-[class*=userProfileInner_]>[class*=footer_],
-[class*=section_]:has(>[class*=note_]),
-[aria-label='Add Note'] {
-    display: none;
 }
 
 /* long bio */
@@ -27,5 +15,10 @@
 }
 
 [class*=viewFullBio_] {
+    display: none;
+}
+
+/* message box */
+[class*=biteSize_]>[class*=footer_] {
     display: none;
 }

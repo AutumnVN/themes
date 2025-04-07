@@ -12,27 +12,27 @@
 [href='https://support.discord.com'],
 
 #profile-customization-tab>[class*=container_],
-[class*=customizationSection_]:has(>h3>[class*=premiumBadge_]),
 [class*=tryItOutSection_],
+[class*=upsellContainer_],
 [class*=upsellOverlayContainer_],
 
 [class*=profileEffects_],
 [class*=avatarDecoration_],
 [class*=premiumIcon_],
+[class*=platedWrapper_]>[style*='background: linear-gradient'],
+[class*=nameplated_]>[style*='background: linear-gradient'],
 
 [class*=shinyButton_],
 [class*=effectsWrapper_],
 [class*=burstGlow_],
-
-[data-list-id=guildsnav]>div>[class*=footer_],
-[aria-label=Servers]~[class*=listItem_],
 
 [data-list-item-id*=channels___boosts],
 
 [class*=threadSuggestionBar_],
 [class*=popout_]:has(>[class*=more_]),
 
-[class*=option_]:after,
+[class*='membersGroup_']:has([role=button]),
+[class*='container_']:has(>[class*='infoSection_']),
 
 #channel-context-invite-people,
 [class*=separator_]:has(+div>#guild-context-invite-people),
@@ -47,24 +47,20 @@
 #message-actions>div>[class*=wrapper_],
 #message-actions-add-reaction-0,
 #message-actions-edit,
-#message-actions-pin,
 #message-actions-thread,
+#message-actions-save-for-later-upsell,
 #message-actions-mark-unread,
-#message-actions-copy-link,
 #message-actions-tts,
 #message-actions-report,
-[class*=separator_]:has(+div>[id*=message-actions-devmode-copy-id]),
-[id*=message-actions-devmode-copy-id],
 
 #message>div>[class*=wrapper_],
 #message-add-reaction-0,
 #message-edit,
 #message-thread,
+#message-save-for-later-upsell,
 #message-mark-unread,
 #message-tts,
 #message-report,
-[class*=separator_]:has(+div>[id*=message-devmode-copy-id]),
-[id*=message-devmode-copy-id],
 
 [aria-label='Create Invite'],
 [aria-label='Invite to Server'],
@@ -76,12 +72,18 @@
 [aria-label*='Click to react']~[class*=separator_],
 [aria-label*='Click to remove'],
 [aria-label*='Click to remove']~[class*=separator_],
+[aria-label='Create Thread'],
+[aria-label='Bookmark Message'],
 [aria-label='Mark Unread'],
-[aria-label='Copy Message ID'],
-[aria-label='Enable Super Reactions'],
-
-[data-author-username=AxerBot]:has([class*=messageContent_]>ul) {
+[aria-label='Enable Super Reactions'] {
     display: none !important;
+}
+
+/* nameplate close dm button */
+[class*=closeButtonPlated_] {
+    --custom-nameplate: transparent !important;
+    --custom-nameplate-neutral: transparent !important;
+    --custom-nameplate-neutral-hovered: transparent !important;
 }
 
 /* super reaction */
@@ -91,4 +93,9 @@
 
 [class*=shakeReaction_] {
     animation: none !important;
+}
+
+/* code markup */
+code {
+    border: none !important;
 }

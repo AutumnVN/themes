@@ -4,9 +4,20 @@
     --font-code: Consolas;
 }
 
+/* add reaction button */
+[class*=reactionBtn_][class*=forceShow_] {
+    opacity: 0;
+}
+
 /* bot option drop down */
 [class*=popout_][style*=max-height]:has(+[class*=measurement_]) {
     max-height: 100vh !important;
+}
+
+/* bot tag */
+[class*=botText_] {
+    font-weight: 500;
+    font-size: .625rem !important;
 }
 
 /* channel indicator */
@@ -17,41 +28,43 @@
     --i-connected: var(--green-260-hsl);
 }
 
-[class*=containerD] {
+[class*=containerDefault_] {
     margin: 2px 0;
 }
 
-[class*=containerD] [class*=link_] {
+[class*=containerDefault_] [class*=link_] {
     background: transparent !important;
 }
 
-[class*=containerD]:has(>[class*=typeDefault_]):hover {
+[class*=containerDefault_]:has(>[class*=typeDefault_]):hover {
     background-color: var(--background-modifier-hover);
 }
 
-[class*=containerD]:has(>[class*=modeSelected_]) {
+/* selected */
+[class*=containerDefault_]:has(>[class*=modeSelected_]) {
     background-color: hsla(var(--i-selected)/0.15);
 }
 
-[class*=containerD]:has(>[class*=modeSelected_]):before {
+[class*=containerDefault_]:has(>[class*=modeSelected_]):before {
     position: absolute;
     background: hsl(var(--i-selected));
-    width: var(--i-width);
+    width: calc(var(--i-width) + 1px);
     height: 100%;
     content: '';
 }
 
-[class*=containerD]:has(>[class*=modeSelected_]):hover {
+[class*=containerDefault_]:has(>[class*=modeSelected_]):hover {
     background-color: hsla(var(--i-selected)/0.25);
 }
 
-[class*=containerD]>[class*=modeSelected_]>div>[class*=link_] svg,
-[class*=containerD]>[class*=modeSelected_]>div>[class*=link_]>div>[class*=name_],
-[class*=containerD]>[class*=modeSelected_][class*=typeThread_]>[class*=link_]>div>[class*=name_] {
+[class*=containerDefault_]>[class*=modeSelected_]>div>[class*=link_] svg,
+[class*=containerDefault_]>[class*=modeSelected_]>div>[class*=link_]>div>[class*=name_],
+[class*=containerDefault_]>[class*=modeSelected_][class*=typeThread_]>[class*=link_]>div>[class*=name_] {
     color: hsl(var(--i-selected));
 }
 
-[class*=containerD]>[class*=modeUnread_]>[class*=unreadRelevant_] {
+/* old unread */
+[class*=containerDefault_]>[class*=modeUnread_]>[class*=unreadRelevant_] {
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
@@ -60,59 +73,79 @@
     height: 15px;
 }
 
-[class*=containerD]>[class*=modeUnread_]>div>[class*=link_] svg,
-[class*=containerD]>[class*=modeUnread_]>div>[class*=link_]>div>[class*=name_] {
+[class*=containerDefault_]>[class*=modeUnread_]>div>[class*=link_] svg,
+[class*=containerDefault_]>[class*=modeUnread_]>div>[class*=link_]>div>[class*=name_] {
     color: #fff;
 }
 
-[class*=containerD]:has([class*=mentionsBadge_]):hover {
+/* new unread */
+[class*=containerDefault_]>div>[class*=unread_] {
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    border-radius: 0;
+    width: var(--i-width);
+    height: 15px;
+    z-index: -1;
+}
+
+[class*=containerDefault_]>[class*=modeUnreadImportant_]>div>[class*=link_] svg,
+[class*=containerDefault_]>[class*=modeUnreadImportant_]>div>[class*=link_]>div>[class*=name_] {
+    color: #fff;
+}
+
+/* mention */
+[class*=containerDefault_]:has([class*=mentionsBadge_]):hover {
     background-color: hsla(var(--i-mention)/0.25);
 }
 
-[class*=containerD]:has([class*=mentionsBadge_])>div>[class*=unreadRelevant_] {
+[class*=containerDefault_]:has([class*=mentionsBadge_])>div>[class*=unreadRelevant_] {
     background-color: hsl(var(--i-mention));
 }
 
-[class*=containerD]:has([class*=mentionsBadge_])>div>div>[class*=link_] svg,
-[class*=containerD]:has([class*=mentionsBadge_])>div>div>[class*=link_]>div>[class*=name_],
-[class*=containerD]:has([class*=mentionsBadge_])>[class*=typeThread_]>[class*=link_]>div>[class*=name_] {
+[class*=containerDefault_]:has([class*=mentionsBadge_])>div>div>[class*=link_] svg,
+[class*=containerDefault_]:has([class*=mentionsBadge_])>div>div>[class*=link_]>div>[class*=name_],
+[class*=containerDefault_]:has([class*=mentionsBadge_])>[class*=typeThread_]>[class*=link_]>div>[class*=name_] {
     color: hsl(var(--i-mention));
 }
 
-[class*=containerD]:has(>div>[class*=modeConnected_]) {
+/* connected */
+[class*=containerDefault_]:has(>div>[class*=modeConnected_]) {
     background-color: hsla(var(--i-connected)/0.15);
 }
 
-[class*=containerD]:has(>div>[class*=modeConnected_]):before {
+[class*=containerDefault_]:has(>div>[class*=modeConnected_]):before {
     position: absolute;
     background: hsl(var(--i-connected));
-    width: var(--i-width);
+    width: calc(var(--i-width) + 1px);
     height: 100%;
     content: '';
 }
 
-[class*=containerD]:has(>div>[class*=modeConnected_]):hover {
+[class*=containerDefault_]:has(>div>[class*=modeConnected_]):hover {
     background-color: hsla(var(--i-connected)/0.25);
 }
 
-[class*=containerD]>div>[class*=modeConnected_]>div>[class*=link_] svg,
-[class*=containerD]>div>[class*=modeConnected_]>div>[class*=link_]>div>[class*=name_] {
+[class*=containerDefault_]>div>[class*=modeConnected_]>div>[class*=link_] svg,
+[class*=containerDefault_]>div>[class*=modeConnected_]>div>[class*=link_]>div>[class*=name_] {
     color: hsl(var(--i-connected));
 }
 
+/* dm */
 [class*=channel_] {
     margin: 2px 0;
     max-width: unset;
 }
 
 [class*=channel_]>div>[class*=link_] {
-    padding-left: 4px;
+    padding-left: 16px !important;
 }
 
 [class*=channel_]:hover {
     background-color: var(--background-modifier-hover);
 }
 
+/* selected */
 [class*=channel_]:has(>[class*=selected_]) {
     background-color: hsla(var(--i-selected)/0.15);
 }
@@ -139,27 +172,7 @@
     background: transparent;
 }
 
-/* channel list */
-[class*=content_]>[class*=sidebar_],
-[class*=bannerImage_]:not(:has([class*=bannerGradient_])),
-[class*=bannerImg_] {
-    width: 260px;
-}
-
-[class*=avatarWrapper_][aria-label='Set Status'] {
-    flex: 1;
-}
-
-@media (width < 600px) {
-
-    [class*=content_]>[class*=sidebar_],
-    [aria-label='Channel header']>div>[class*=toolbar_],
-    [aria-label='Servers sidebar'] {
-        display: none;
-    }
-}
-
-/* dashless */
+/* dashless channel name */
 @font-face {
     src: url('https://vendicated.github.io/random-files/Dashless.woff2') format('woff2');
     font-family: 'Dashless';
@@ -172,46 +185,9 @@ h1[class*=title_],
     font-family: 'Dashless', var(--font-primary);
 }
 
-/* download attachment */
-[class*=nonMediaAttachment_] {
-    top: 20px;
-    right: 20px;
-    opacity: 1;
-}
-
-/* embed */
-[class*=embedFull_],
-[class*=gridContainer_] {
-    max-width: fit-content !important;
-}
-
-[class*=embedFull_]:has([class*=embedMedia_]),
-[class*=gridContainer_]:has([class*=embedMedia_]) {
-    min-width: 532px !important;
-}
-
-[class*=embed_] [style*='max-width: 400px'] {
-    max-width: 500px !important;
-    max-height: 375px !important;
-}
-
-[class*=embedVideo_][style*=padding-bottom] {
-    padding-bottom: 300px !important;
-}
-
 /* friend list username */
 [class*=discriminator_] {
     visibility: visible;
-}
-
-/* home icon *
-[data-list-item-id=guildsnav___home] {
-    content: url('');
-}
-
-/* jump to present bar */
-[class*=jumpToPresentBar_] {
-    right: 16px;
 }
 
 /* loading screen */
@@ -220,77 +196,13 @@ h1[class*=title_],
     pointer-events: none;
 }
 
-/* member list */
-[class*=membersWrap_]>[class*=members_] {
-    width: 260px;
-}
-
-[aria-label='Members']>[class*=member_] {
-    max-width: unset;
-}
-
-@media (width < 1200px) {
-    [class*=container_]:has(>[class*=membersWrap_]) {
-        display: none;
-    }
-}
-
-/* message */
-@media (width < 600px) {
-    [class*=message_] {
-        padding-right: 0 !important;
-    }
-}
-
-/* offscreen fix */
-[class*=topic_],
-[class*=nicknames_],
-[class*=subtitleContainer_] [class*=children_] {
-    width: 0;
-}
-
-[class*=list_][class*=auto_] {
-    position: absolute;
-    height: 100%;
-}
-
-[class*=tileWrapper_]:has(>[class*=videoFrame_]) {
-    position: absolute;
-}
-
-/* open chat button */
+/* open chat button in voice channel */
 [aria-label='Open Chat'] {
     display: flex;
     order: 1;
 }
 
-/* search bar */
-[class*=toolbar_]>[class*=search_] {
-    order: -1;
-}
-
-/* stream */
-[class*=streamPreview_]:not([class*=content_]) {
-    width: 504px;
-}
-
-[class*=previewContainer_] {
-    height: 284px;
-}
-
-/* reaction *
-[id*=message-reactions]>div>div>div>div>.emoji,
-[id*=message-reactions]>div>div>div>[class*=reactionCount_],
-[class*=effectsWrapper_] {
-    zoom: 200%;
-}
-
-/* reaction button */
-[class*=reactionBtn_][class*=forceShow_] {
-    opacity: 0;
-}
-
-/* rpc */
+/* rich presence */
 [class*=card_]>header>[class*=headerText_]>[class*=overflow_] {
     white-space: wrap;
 }
@@ -299,45 +211,72 @@ h1[class*=title_],
     font-size: 12px;
 }
 
-/* tag */
-[class*=botText_] {
-    font-weight: 500;
-    font-size: .625rem !important;
+/* search bar first */
+[class*=toolbar_]>[class*=search_] {
+    order: -1;
 }
 
-[class*=chipletContainerInner_]>[class*=text_] {
-    font-weight: 500;
+/* server list item */
+[class*=blobContainer_]>[class*=wrapper_],
+[class*=listItemWrapper_]>[class*=wrapper_] {
+    zoom: 1.2;
+}
+
+[id*=folder-items] {
+    height: 100% !important;
+}
+
+[class*=closedFolderIconWrapper_]>[class*=guildIcon_] {
+    border-radius: 50% !important;
+    font-size: 6px !important;
 }
 
 /* windows title bar */
-[class*=typeWindows_] {
-    position: absolute;
-    width: 100%;
-    height: 9px;
-}
-
 [class*=winButton_] {
     width: 48px;
     height: 48px;
 }
 
-[aria-label='Channel header']:not([class*=threadSidebarOpen_]>div>[aria-label='Channel header']) {
-    padding-right: calc(48px * 3);
-}
-
+[aria-label='Channel header']:not([class*=threadSidebarOpen_]>div>[aria-label='Channel header']),
 section[class*=header_]:not([class*=threadSidebarOpen_]>section[class*=header_]),
 [aria-label='Create Thread']>section>div>[class*=toolbar_],
 [aria-label='Thread header'],
 [aria-label*='Show Chat'],
 main>section[class*=container_],
-[class*=container_]>[class*=headerBar_]:has([class*=searchBar_]) {
-    padding-right: calc(48px * 3);
+[class*=container_]>[class*=headerBar_]:has([class*=searchBar_]),
+[class*=innerContainer_]>[class*=headerBar_]:has([class*=searchBar_]) {
+    padding-right: calc(48px * 4);
 }
 
 [class*=wordmarkWindows_] {
     display: none;
 }
 
-[class*=typeWindows_]:has(+[class*=appAsidePanelWrapper_]>div>div>div>div>div>div>div>[class*=notice_])>[class*=winButton_] {
-    margin-top: 40px;
+[class*=container_]>[class*=base_] {
+    grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
+}
+
+[data-windows=true] {
+    display: block;
+    align-content: start;
+    z-index: 101;
+    padding: 0;
+    min-height: 9px;
+}
+
+[data-windows=true]>[class*=trailing_] {
+    position: absolute;
+    right: 0;
+    gap: 5px;
+}
+
+[class*=winButtons_] {
+    gap: 0;
+}
+
+[data-tab-id=hubs],
+[class*=winButtons_]:before,
+[data-windows=true]>[class*=title_],
+[data-windows=true]>[class*=leading_] {
+    display: none;
 }
