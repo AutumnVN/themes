@@ -128,3 +128,8 @@ main>section[class*=container_],
 [data-windows=true]>[class*=leading_] {
     display: none;
 }
+
+[class*=stack_]>[class*=tutorialContainer_]:first-child,
+[class*=stack_]>[class*=listItem_]:first-child {
+    margin-top: 12px;
+}
