@@ -79,11 +79,26 @@
     display: none !important;
 }
 
+/* code markup */
+code {
+    border: none !important;
+}
+
+/* color banner */
+[class*=banner_][style*=background-color] {
+    background-color: transparent !important;
+}
+
 /* nameplate close dm button */
 [class*=closeButtonPlated_] {
     --custom-nameplate: transparent !important;
     --custom-nameplate-neutral: transparent !important;
     --custom-nameplate-neutral-hovered: transparent !important;
+}
+
+/* profile message box */
+[class*=biteSize_]>[class*=footer_] {
+    display: none;
 }
 
 /* super reaction */
@@ -95,7 +110,12 @@
     animation: none !important;
 }
 
-/* code markup */
-code {
-    border: none !important;
+/* view full bio */
+[class*=descriptionClamp_] {
+    display: block;
+    max-height: unset;
+}
+
+[class*=viewFullBio_] {
+    display: none;
 }

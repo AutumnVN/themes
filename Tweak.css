@@ -44,6 +44,44 @@ h1[class*=title_],
     pointer-events: none;
 }
 
+/* member count offline icon */
+.vc-membercount-total-dot {
+    border: none !important;
+    background-color: var(--primary-400);
+    width: 12px !important;
+    height: 12px !important;
+}
+
+/* more user tag */
+[data-tag=owner] {
+    background-color: var(--text-warning);
+}
+
+[data-tag=admin] {
+    background-color: var(--red-400);
+}
+
+[data-tag=staff] {
+    background-color: var(--green-345);
+}
+
+[data-tag=mod] {
+    background-color: var(--green-400);
+}
+
+[data-tag='vc mod'] {
+    background-color: var(--teal-345);
+}
+
+[data-tag='chat mod'] {
+    background-color: var(--teal-400);
+}
+
+[data-tag*=bot] {
+    background-color: var(--blue-360);
+}
+
+
 /* open chat button in voice channel */
 [aria-label='Open Chat'] {
     display: flex;
@@ -57,6 +95,12 @@ h1[class*=title_],
 
 [class*=card_]>[class*=body_]>[class*=content_]>[class*=details_]>div>[class*="heading-sm/semibold_"] {
     font-size: 12px;
+}
+
+/* side dm profile */
+.theme-midnight {
+    --background-secondary-alt: color-mix(in oklab, var(--neutral-95) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
+    --bg-surface-overlay: color-mix(in oklab, var(--primary-800) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 }
 
 /* search bar first */
