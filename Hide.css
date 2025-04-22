@@ -31,7 +31,7 @@
 [class*=threadSuggestionBar_],
 [class*=popout_]:has(>[class*=more_]),
 
-[class*='membersGroup_']:has([role=button]),
+[class*='membersGroup_']:has(>[role=button]),
 [class*='container_']:has(>[class*='infoSection_']),
 
 #channel-context-invite-people,
