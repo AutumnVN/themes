@@ -19,7 +19,7 @@
 [class*=profileEffects_],
 [class*=avatarDecoration_],
 [class*=premiumIcon_],
-[class*=platedWrapper_]>[style*='background: linear-gradient'],
+[class*=interactive_]>[style*='background: linear-gradient'],
 [class*=nameplated_]>[style*='background: linear-gradient'],
 
 [class*=shinyButton_],
@@ -31,8 +31,8 @@
 [class*=threadSuggestionBar_],
 [class*=popout_]:has(>[class*=more_]),
 
-[class*='membersGroup_']:has(>[role=button]),
-[class*='container_']:has(>[class*='infoSection_']),
+[class*=membersGroup_]:has(>[role=button]),
+[class*=container_]:has(>[class*=infoSection_]),
 
 [class*=gradientBackground_],
 
