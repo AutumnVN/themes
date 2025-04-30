@@ -118,7 +118,7 @@ h1[class*=title_],
     height: 100% !important;
 }
 
-[class*=closedFolderIconWrapper_]>[class*=guildIcon_] {
+[class*=olderPreviewGuildIcon_] {
     border-radius: 50% !important;
     font-size: 6px !important;
 }
