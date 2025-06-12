@@ -148,7 +148,7 @@ main>section[class*=container_],
     grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 }
 
-[data-windows=true] {
+[class*=base_]>[class*=bar_] {
     display: block;
     align-content: start;
     z-index: 9999;
@@ -156,7 +156,7 @@ main>section[class*=container_],
     min-height: 9px;
 }
 
-[data-windows=true]>[class*=trailing_] {
+[class*=base_]>[class*=bar_]>[class*=trailing_] {
     position: absolute;
     right: 0;
     gap: 5px;
@@ -168,8 +168,8 @@ main>section[class*=container_],
 
 [data-tab-id=hubs],
 [class*=winButtons_]:before,
-[data-windows=true]>[class*=title_],
-[data-windows=true]>[class*=leading_] {
+[class*=base_]>[class*=bar_]>[class*=title_],
+[class*=base_]>[class*=bar_]>[class*=leading_] {
     display: none;
 }
 
