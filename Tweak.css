@@ -137,7 +137,7 @@ section[class*=header_]:not([class*=threadSidebarOpen_]>section[class*=header_])
 main>section[class*=container_],
 [class*=container_]>[class*=headerBar_]:has(>[class*=searchBar_]),
 [class*=innerContainer_]>[class*=headerBar_]:has(>[class*=searchBar_]) {
-    padding-right: calc(48px * 4);
+    padding-right: calc(48px * 5);
 }
 
 [class*=wordmarkWindows_] {
