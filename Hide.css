@@ -34,7 +34,7 @@
 [class*=membersGroup_]:has(>[role=button]),
 [class*=container_]:has(>[class*=infoSection_]),
 
-[class*=gradientBackground_],
+[class*=pulseGradient_],
 
 #channel-context-invite-people,
 [class*=separator_]:has(+div>#guild-context-invite-people),
