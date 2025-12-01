@@ -66,6 +66,8 @@
 
 [aria-label='Create Invite'],
 [aria-label='Invite to Server'],
+[aria-label='Invite to Channel'],
+[class*=inviteButton_],
 
 [aria-label='Send a gift'],
 [class*=channelAppLauncher_],
