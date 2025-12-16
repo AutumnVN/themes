@@ -6,24 +6,24 @@
     --i-connected: var(--green-260-hsl);
 }
 
-[class*=containerDefault_] {
+[class*=containerDefault] {
     margin: 2px 0;
 }
 
-[class*=containerDefault_] [class*=link_] {
+[class*=containerDefault] [class*=link] {
     background: transparent !important;
 }
 
-[class*=containerDefault_]:has(>[class*=typeDefault_]):hover {
+[class*=containerDefault]:has(>[class*=typeDefault]):hover {
     background-color: var(--background-modifier-hover);
 }
 
 /* selected */
-[class*=containerDefault_]:has(>[class*=modeSelected_]) {
+[class*=containerDefault]:has(>[class*=modeSelected]) {
     background-color: hsla(var(--i-selected)/0.15);
 }
 
-[class*=containerDefault_]:has(>[class*=modeSelected_]):before {
+[class*=containerDefault]:has(>[class*=modeSelected]):before {
     position: absolute;
     background: hsl(var(--i-selected));
     width: calc(var(--i-width) + 1px);
@@ -31,18 +31,18 @@
     content: '';
 }
 
-[class*=containerDefault_]:has(>[class*=modeSelected_]):hover {
+[class*=containerDefault]:has(>[class*=modeSelected]):hover {
     background-color: hsla(var(--i-selected)/0.25);
 }
 
-[class*=containerDefault_]>[class*=modeSelected_]>div>[class*=link_] svg,
-[class*=containerDefault_]>[class*=modeSelected_]>div>[class*=link_]>div>[class*=name_],
-[class*=containerDefault_]>[class*=modeSelected_][class*=typeThread_]>[class*=link_]>div>[class*=name_] {
+[class*=containerDefault]>[class*=modeSelected]>div>[class*=link] svg,
+[class*=containerDefault]>[class*=modeSelected]>div>[class*=link]>div>[class*=name],
+[class*=containerDefault]>[class*=modeSelected][class*=typeThread]>[class*=link]>div>[class*=name] {
     color: hsl(var(--i-selected));
 }
 
 /* old unread */
-[class*=containerDefault_]>[class*=modeUnread_]>[class*=unreadRelevant_] {
+[class*=containerDefault]>[class*=modeUnread]>[class*=unreadRelevant] {
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
@@ -51,13 +51,13 @@
     height: 15px;
 }
 
-[class*=containerDefault_]>[class*=modeUnread_]>div>[class*=link_] svg,
-[class*=containerDefault_]>[class*=modeUnread_]>div>[class*=link_]>div>[class*=name_] {
+[class*=containerDefault]>[class*=modeUnread]>div>[class*=link] svg,
+[class*=containerDefault]>[class*=modeUnread]>div>[class*=link]>div>[class*=name] {
     color: #fff;
 }
 
 /* new unread */
-[class*=containerDefault_]>div>[class*=unread_] {
+[class*=containerDefault]>div>[class*=unread] {
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
@@ -67,32 +67,32 @@
     z-index: -1;
 }
 
-[class*=containerDefault_]>[class*=modeUnreadImportant_]>div>[class*=link_] svg,
-[class*=containerDefault_]>[class*=modeUnreadImportant_]>div>[class*=link_]>div>[class*=name_] {
+[class*=containerDefault]>[class*=modeUnreadImportant]>div>[class*=link] svg,
+[class*=containerDefault]>[class*=modeUnreadImportant]>div>[class*=link]>div>[class*=name] {
     color: #fff;
 }
 
 /* mention */
-[class*=containerDefault_]:has([class*=mentionsBadge_]):hover {
+[class*=containerDefault]:has([class*=mentionsBadge]):hover {
     background-color: hsla(var(--i-mention)/0.25);
 }
 
-[class*=containerDefault_]:has([class*=mentionsBadge_])>div>[class*=unreadRelevant_] {
+[class*=containerDefault]:has([class*=mentionsBadge])>div>[class*=unreadRelevant] {
     background-color: hsl(var(--i-mention));
 }
 
-[class*=containerDefault_]:has([class*=mentionsBadge_])>div>div>[class*=link_] svg,
-[class*=containerDefault_]:has([class*=mentionsBadge_])>div>div>[class*=link_]>div>[class*=name_],
-[class*=containerDefault_]:has([class*=mentionsBadge_])>[class*=typeThread_]>[class*=link_]>div>[class*=name_] {
+[class*=containerDefault]:has([class*=mentionsBadge])>div>div>[class*=link] svg,
+[class*=containerDefault]:has([class*=mentionsBadge])>div>div>[class*=link]>div>[class*=name],
+[class*=containerDefault]:has([class*=mentionsBadge])>[class*=typeThread]>[class*=link]>div>[class*=name] {
     color: hsl(var(--i-mention));
 }
 
 /* connected */
-[class*=containerDefault_]:has(>div>[class*=modeConnected_]) {
+[class*=containerDefault]:has(>div>[class*=modeConnected]) {
     background-color: hsla(var(--i-connected)/0.15);
 }
 
-[class*=containerDefault_]:has(>div>[class*=modeConnected_]):before {
+[class*=containerDefault]:has(>div>[class*=modeConnected]):before {
     position: absolute;
     background: hsl(var(--i-connected));
     width: calc(var(--i-width) + 1px);
@@ -100,35 +100,35 @@
     content: '';
 }
 
-[class*=containerDefault_]:has(>div>[class*=modeConnected_]):hover {
+[class*=containerDefault]:has(>div>[class*=modeConnected]):hover {
     background-color: hsla(var(--i-connected)/0.25);
 }
 
-[class*=containerDefault_]>div>[class*=modeConnected_]>div>[class*=link_] svg,
-[class*=containerDefault_]>div>[class*=modeConnected_]>div>[class*=link_]>div>[class*=name_] {
+[class*=containerDefault]>div>[class*=modeConnected]>div>[class*=link] svg,
+[class*=containerDefault]>div>[class*=modeConnected]>div>[class*=link]>div>[class*=name] {
     color: hsl(var(--i-connected));
 }
 
 /* dm */
-[class*=channel_] {
+[class*=channel] {
     margin: 2px 0;
     max-width: unset;
 }
 
-[class*=channel_]>div>[class*=link_] {
+[class*=channel]>div>[class*=link] {
     padding-left: 16px !important;
 }
 
-[class*=channel_]:hover {
+[class*=channel]:hover {
     background-color: var(--background-modifier-hover);
 }
 
 /* selected */
-[class*=channel_]:has(>[class*=selected_]) {
+[class*=channel]:has(>[class*=selected]) {
     background-color: hsla(var(--i-selected)/0.15);
 }
 
-[class*=channel_]:has(>[class*=selected_]):before {
+[class*=channel]:has(>[class*=selected]):before {
     position: absolute;
     background: hsl(var(--i-selected));
     width: var(--i-width);
@@ -136,16 +136,16 @@
     content: '';
 }
 
-[class*=channel_]:has(>[class*=selected_]):hover {
+[class*=channel]:has(>[class*=selected]):hover {
     background-color: hsla(var(--i-selected)/0.25);
 }
 
-[class*=channel_]>[class*=selected_]>[class*=link_]>div>div>[class*=linkButtonIcon_],
-[class*=channel_]>[class*=selected_]>[class*=link_]>div>div>div>[class*=name_],
-[class*=channel_]>[class*=selected_]>[class*=closeButton_] {
+[class*=channel]>[class*=selected]>[class*=link]>div>div>[class*=linkButtonIcon],
+[class*=channel]>[class*=selected]>[class*=link]>div>div>div>[class*=name],
+[class*=channel]>[class*=selected]>[class*=closeButton] {
     color: hsl(var(--i-selected));
 }
 
-[class*=channel_]>[class*=interactive_] {
+[class*=channel]>[class*=interactive] {
     background: transparent;
 }

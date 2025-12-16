@@ -5,17 +5,17 @@
 }
 
 /* add reaction button */
-[class*=reactionBtn_][class*=forceShow_] {
+[class*=reactionBtn][class*=forceShow] {
     opacity: 0;
 }
 
 /* bot option drop down */
-[class*=popout_][style*=max-height]:has(+[class*=measurement_]) {
+[class*=popout][style*=max-height]:has(+[class*=measurement]) {
     max-height: 100vh !important;
 }
 
 /* bot tag */
-[class*=botText_] {
+[class*=botText] {
     font-weight: 500;
     font-size: .625rem !important;
 }
@@ -26,20 +26,20 @@
     font-family: 'Dashless';
 }
 
-[class*=name_],
-h1[class*=title_],
-[class*=channelNameText_],
-[class*=placeholder_] {
+[class*=name],
+h1[class*=title],
+[class*=channelNameText],
+[class*=placeholder] {
     font-family: 'Dashless', var(--font-primary);
 }
 
 /* friend list username */
-[class*=discriminator_] {
+[class*=discriminator] {
     visibility: visible;
 }
 
 /* loading screen */
-[class*=fixClipping_] {
+[class*=fixClipping] {
     background: transparent;
     pointer-events: none;
 }
@@ -89,11 +89,11 @@ h1[class*=title_],
 }
 
 /* rich presence */
-[class*=card_]>header>[class*=headerText_]>[class*=overflow_] {
+[class*=card]>header>[class*=headerText]>[class*=overflow] {
     white-space: wrap;
 }
 
-[class*=card_]>[class*=body_]>[class*=content_]>[class*=details_]>div>[class*="heading-sm/semibold_"] {
+[class*=card]>[class*=body]>[class*=content]>[class*=details]>div>[class*="heading-sm/semibold_"] {
     font-size: 12px;
 }
 
@@ -104,13 +104,13 @@ h1[class*=title_],
 }
 
 /* search bar first */
-[class*=toolbar_]>[class*=search_] {
+[class*=toolbar]>[class*=search] {
     order: -1;
 }
 
 /* server list item */
-[class*=blobContainer_]>[class*=wrapper_],
-[class*=listItemWrapper_]>[class*=wrapper_] {
+[class*=blobContainer]>[class*=wrapper],
+[class*=listItemWrapper]>[class*=wrapper] {
     zoom: 1.2;
 }
 
@@ -118,37 +118,33 @@ h1[class*=title_],
     height: 100% !important;
 }
 
-[class*=olderPreviewGuildIcon_] {
+[class*=olderPreviewGuildIcon] {
     border-radius: 50% !important;
     font-size: 6px !important;
 }
 
 /* windows title bar */
-[class*=winButton_] {
+[class*=winButton]:not([class*=winButtons]) {
     width: 48px;
     height: 48px;
 }
 
-[aria-label='Channel header']:not([class*=threadSidebarOpen_]>div>[aria-label='Channel header']),
-section[class*=header_]:not([class*=threadSidebarOpen_]>section[class*=header_]),
-[aria-label='Create Thread']>section>div>[class*=toolbar_],
+[aria-label='Channel header']:not([class*=threadSidebarOpen]>div>[aria-label='Channel header']),
+section[class*=header]:not([class*=threadSidebarOpen]>section[class*=header]),
+[aria-label='Create Thread']>section>div>[class*=toolbar],
 [aria-label='Thread header'],
 [aria-label*='Show Chat'],
-main>section[class*=container_],
-[class*=container_]>[class*=headerBar_]:has(>[class*=searchBar_]),
-[class*=innerContainer_]>[class*=headerBar_]:has(>[class*=searchBar_]) {
+main>section[class*=container],
+[class*=container]>[class*=headerBar]:has(>[class*=searchBar]),
+[class*=innerContainer]>[class*=headerBar]:has(>[class*=searchBar]) {
     padding-right: calc(48px * 5);
 }
 
-[class*=wordmarkWindows_] {
-    display: none;
-}
-
-[class*=container_]>[class*=base_] {
+[class*=container]>[class*=base] {
     grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 }
 
-[class*=base_]>[class*=bar_] {
+[class*=base]>[class*=bar] {
     display: block;
     align-content: start;
     z-index: 9999;
@@ -156,24 +152,24 @@ main>section[class*=container_],
     min-height: 9px;
 }
 
-[class*=base_]>[class*=bar_]>[class*=trailing_] {
+[class*=base]>[class*=bar]>[class*=trailing] {
     position: absolute;
     right: 0;
     gap: 5px;
 }
 
-[class*=winButtons_] {
+[class*=winButtons] {
     gap: 0;
 }
 
 [data-tab-id=hubs],
-[class*=winButtons_]:before,
-[class*=base_]>[class*=bar_]>[class*=title_],
-[class*=base_]>[class*=bar_]>[class*=leading_] {
+[class*=winButtons]:before,
+[class*=base]>[class*=bar]>[class*=title],
+[class*=base]>[class*=bar]>[class*=leading] {
     display: none;
 }
 
-[class*=stack_]>[class*=tutorialContainer_]:first-child,
-[class*=stack_]>[class*=listItem_]:first-child {
+[class*=stack]>[class*=tutorialContainer]:first-child,
+[class*=stack]>[class*=listItem]:first-child {
     margin-top: 12px;
 }

@@ -1,10 +1,10 @@
-[class*=header_]:has(+[class*=premiumTab_]),
-[class*=premiumTab_],
-[class*=premiumTab_]+[class*=item_],
+[class*=header]:has(+[class*=premiumTab]),
+[class*=premiumTab],
+[class*=premiumTab]+[class*=item],
 [aria-label=Subscriptions],
 [aria-label='Gift Inventory'],
-[aria-label='Gift Inventory']+[class*=item_],
-[aria-label='Gift Inventory']+[class*=item_]+[class*=separator_],
+[aria-label='Gift Inventory']+[class*=item],
+[aria-label='Gift Inventory']+[class*=item]+[class*=separator],
 
 [href='/store'],
 [href='/shop'],
@@ -12,33 +12,35 @@
 
 [href='https://support.discord.com'],
 
-#profile-customization-tab>[class*=container_],
-[class*=tryItOutSection_],
-[class*=upsellContainer_],
-[class*=upsellOverlayContainer_],
+[aria-label='Checkpoint'],
 
-[class*=profileEffects_],
-[class*=avatarDecoration_],
-[class*=premiumIcon_],
-[class*=interactive_]>[style*='background: linear-gradient'],
-[class*=nameplated_]>[style*='background: linear-gradient'],
+#profile-customization-tab>[class*=container],
+[class*=tryItOutSection],
+[class*=upsellContainer],
+[class*=upsellOverlayContainer],
 
-[class*=shinyButton_],
-[class*=effectsWrapper_],
-[class*=burstGlow_],
+[class*=profileEffects],
+[class*=avatarDecoration],
+[class*=premiumIcon],
+[class*=interactive]>[style*='background: linear-gradient'],
+[class*=nameplated]>[style*='background: linear-gradient'],
+
+[class*=shinyButton],
+[class*=effectsWrapper],
+[class*=burstGlow],
 
 [data-list-item-id*=channels___boosts],
 
-[class*=threadSuggestionBar_],
-[class*=popout_]:has(>[class*=more_]),
+[class*=threadSuggestionBar],
+[class*=popout]:has(>[class*=more]),
 
-[class*=membersGroup_]:has(>[role=button]),
-[class*=container_]:has(>[class*=infoSection_]),
+[class*=membersGroup]:has(>[role=button]),
+[class*=container]:has(>[class*=infoSection]),
 
-[class*=pulseGradient_],
+[class*=pulseGradient],
 
 #channel-context-invite-people,
-[class*=separator_]:has(+div>#guild-context-invite-people),
+[class*=separator]:has(+div>#guild-context-invite-people),
 #guild-context-invite-people,
 
 #user-context-invite-to-server,
@@ -47,7 +49,7 @@
 #user-context-add-friend-nickname,
 #user-context-close-dm,
 
-#message-actions>div>[class*=wrapper_],
+#message-actions>div>[class*=wrapper],
 #message-actions-add-reaction-0,
 #message-actions-edit,
 #message-actions-thread,
@@ -56,7 +58,7 @@
 #message-actions-tts,
 #message-actions-report,
 
-#message>div>[class*=wrapper_],
+#message>div>[class*=wrapper],
 #message-add-reaction-0,
 #message-edit,
 #message-thread,
@@ -68,15 +70,15 @@
 [aria-label='Create Invite'],
 [aria-label='Invite to Server'],
 [aria-label='Invite to Channel'],
-[class*=inviteButton_],
+[class*=inviteButton],
 
 [aria-label='Send a gift'],
-[class*=channelAppLauncher_],
+[class*=channelAppLauncher],
 
 [aria-label*='Click to react'],
-[aria-label*='Click to react']~[class*=separator_],
+[aria-label*='Click to react']~[class*=separator],
 [aria-label*='Click to remove'],
-[aria-label*='Click to remove']~[class*=separator_],
+[aria-label*='Click to remove']~[class*=separator],
 [aria-label='Create Thread'],
 [aria-label='Bookmark Message'],
 [aria-label='Mark Unread'],
@@ -90,37 +92,37 @@ code {
 }
 
 /* color banner */
-[class*=banner_][style*=background-color] {
+[class*=banner][style*=background-color] {
     background-color: transparent !important;
 }
 
 /* nameplate close dm button */
-[class*=closeButtonPlated_] {
+[class*=closeButtonPlated] {
     --custom-nameplate: transparent !important;
     --custom-nameplate-neutral: transparent !important;
     --custom-nameplate-neutral-hovered: transparent !important;
 }
 
 /* profile message box */
-[class*=biteSize_]>[class*=footer_] {
+[class*=biteSize]>[class*=footer] {
     display: none;
 }
 
 /* super reaction */
-[class*=hideEmoji_] {
+[class*=hideEmoji] {
     opacity: 1;
 }
 
-[class*=shakeReaction_] {
+[class*=shakeReaction] {
     animation: none !important;
 }
 
 /* view full bio */
-[class*=descriptionClamp_] {
+[class*=descriptionClamp] {
     display: block;
     max-height: unset;
 }
 
-[class*=viewFullBio_] {
+[class*=viewFullBio] {
     display: none;
 }
