@@ -8,7 +8,7 @@
 
 [href='/store'],
 [href='/shop'],
-[href='/quest-home'],
+/* [href='/quest-home'], */
 
 [href='https://support.discord.com'],
 
@@ -84,6 +84,10 @@
 [aria-label='Mark Unread'],
 [aria-label='Enable Super Reactions'] {
     display: none !important;
+}
+
+[class*=overlay] {
+    --user-profile-overlay-background: transparent !important;
 }
 
 /* code markup */
