@@ -33,7 +33,7 @@
 [data-list-item-id*=channels___boosts],
 
 [class*=threadSuggestionBar],
-[class*=popout]:has(>[class*=more]),
+[class*=popout]:has(>[class*=title]+[class*=list]),
 
 [class*=membersGroup]:has(>[role=button]),
 [class*=container]:has(>[class*=infoSection]),
