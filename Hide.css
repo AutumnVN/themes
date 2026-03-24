@@ -97,7 +97,7 @@ code {
 }
 
 /* color banner */
-[class*=banner][style*=background-color] {
+[class*=banner][style*=background-color]:not([class*=user-profile-popout]) {
     background-color: transparent !important;
 }
 
