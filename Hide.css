@@ -8,12 +8,13 @@
 
 [href='/store'],
 [href='/shop'],
-/* [href='/quest-home'], */
+[href='/quest-home'],
 
 [href='https://support.discord.com'],
 
 [aria-label='Checkpoint'],
 [aria-label='DevTools'],
+[aria-label='Last Meadow Online'],
 
 #profile-customization-tab>[class*=container],
 [class*=tryItOutSection],

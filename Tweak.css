@@ -137,7 +137,7 @@ section[class*=header]:not([class*=threadSidebarOpen]>section[class*=header]),
 main>section[class*=container],
 [class*=container]>[class*=headerBar]:has(>[class*=searchBar]),
 [class*=innerContainer]>[class*=headerBar]:has(>[class*=searchBar]) {
-    padding-right: calc(48px * 5);
+    padding-right: calc(48px * 4.6);
 }
 
 [class*=container]>[class*=base] {
