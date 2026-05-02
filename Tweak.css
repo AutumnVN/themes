@@ -26,10 +26,10 @@
     font-family: 'Dashless';
 }
 
-[class*=name],
+[class*=name]:not([class*=username], [class*=Username], [class*=nameplate]),
 h1[class*=title],
 [class*=channelNameText],
-[class*=placeholder] {
+[class*=placeholder]:not([class*=placeholderUsername]) {
     font-family: 'Dashless', var(--font-primary);
 }
 
