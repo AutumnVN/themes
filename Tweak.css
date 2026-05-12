@@ -81,6 +81,16 @@ h1[class*=title],
     background-color: var(--blue-360);
 }
 
+/* username font */
+[class*=username],
+[class*=displayName] {
+    font-family: Inter;
+}
+
+[class*=displayName]>[data-username-with-effects]::before {
+    display: none;
+}
+
 
 /* open chat button in voice channel */
 [aria-label='Open Chat'] {
