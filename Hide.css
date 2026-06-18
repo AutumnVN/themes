@@ -80,9 +80,9 @@
 [class*=channelAppLauncher],
 
 [aria-label*='Click to react'],
-[aria-label*='Click to react']~[class*=separator],
 [aria-label*='Click to remove'],
-[aria-label*='Click to remove']~[class*=separator],
+span:has(>[aria-label*='Click to react'])~[class*=separator],
+span:has(>[aria-label*='Click to remove'])~[class*=separator],
 [aria-label='Create Thread'],
 [aria-label='Bookmark Message'],
 [aria-label='Mark Unread'],
