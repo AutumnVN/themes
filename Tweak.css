@@ -145,7 +145,6 @@ section[class*=header]:not([class*=threadSidebarOpen]>section[class*=header]),
 [aria-label='Thread header'],
 [aria-label*='Show Chat'],
 main>section[class*=container],
-[class*=container]>[class*=headerBar]:has(>[class*=search]),
 [class*=container]>[class*=headerBar]>[class*=searchBar],
 [class*=innerContainer]>[class*=headerBar]:has(>[class*=search]) {
     padding-right: calc(48px * 4.6);
