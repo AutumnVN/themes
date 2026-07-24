@@ -26,7 +26,7 @@
     font-family: 'Dashless';
 }
 
-[class*=name]:not([class*=username], [class*=Username], [class*=nameplate]),
+[class*=name]:not([class*=username], [class*=Username], [class*=nameplate])>[class*=text],
 h1[class*=title],
 [class*=channelNameText],
 [class*=placeholder]:not([class*=placeholderUsername]) {
