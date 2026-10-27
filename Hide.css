@@ -43,6 +43,8 @@
 
 [class*=pulseGradient],
 
+[style*='--custom-friends-sidebar-width'],
+
 #channel-context-invite-people,
 [class*=separator]:has(+div>#guild-context-invite-people),
 #guild-context-invite-people,
